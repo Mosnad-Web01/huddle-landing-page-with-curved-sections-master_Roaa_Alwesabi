@@ -1,0 +1,193 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Navbar Adjustments */
+.nav_bar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 20px;
+}
+
+.nav_bar .logo {
+width: 80px; /* Resizing the image */
+}
+
+.nav_bar .try_it {
+margin-left: auto; /* Move button to the right */
+margin-right: 20px; /* Space between button and content */
+}
+
+/* Header Section */
+.header {
+background: #f5f5f5;
+padding: 20px 0;
+text-align: center;
+}
+
+.header h1 {
+font-size: 2.5em;
+margin: 10px 0;
+}
+
+.header p {
+font-size: 1.2em;
+color: #333;
+}
+
+.header button {
+padding: 10px 20px;
+font-size: 1em;
+background: #ff52bf;
+color: #fff;
+border: none;
+border-radius: 20px;
+cursor: pointer;
+transition: background 0.3s;
+}
+
+.header button:hover {
+background: #ff33b2;
+}
+
+/* Stats Section */
+.stats {
+display: flex;
+justify-content: space-around;
+padding: 50px 0;
+background: #f5faff;
+text-align: center;
+}
+
+.stats div {
+flex: 1;
+}
+
+.stats img {
+width: 60px;
+margin-bottom: 10px;
+}
+
+.stats h2 {
+font-size: 2.5em;
+color: #333;
+}
+
+.stats p {
+font-size: 1.2em;
+color: #777;
+}
+
+/* Features Section */
+.feature1, .feature2, .feature3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+  background: #fff;
+  text-align: left;
+}
+
+.feature1 img, .feature3 img {
+  order: 2; 
+  margin-left: 20px;
+  width: 500px;
+}
+
+.feature2 img {
+  order: 1; 
+  margin-right: 20px;
+  width: 500px;
+}
+
+.feature1 .content, .feature2 .content, .feature3 .content {
+  max-width: 50%;
+}
+
+.feature2 .content {
+  order: 2; /* Ensures the content is on the right */
+}
+
+.features img {
+  width: 300px;
+}
+
+.cta {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.cta button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background: #ff52bf;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: inline-block; /* Ensure the button is treated as inline-block for centering */
+}
+
+.cta button:hover {
+  background: #ff33b2;
+}
+
+
+.footer {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+text-align: left;
+background: #00252d;
+color: #fff;
+padding: 50px;
+}
+
+.footer .information {
+width: 48%;
+}
+
+.footer .newsletter {
+width: 48%;
+text-align: right;
+}
+
+.footer img {
+filter: invert(1); /* Convert icons to white */
+}
+
+.footer input {
+padding: 10px;
+border: none;
+border-radius: 20px;
+width: 80%;
+margin-bottom: 10px;
+}
+
+.footer button {
+padding: 10px 20px;
+font-size: 1em;
+background: #ff52bf;
+color: #fff;
+border: none;
+border-radius: 20px;
+cursor: pointer;
+transition: background 0.3s;
+}
+
+.footer button:hover {
+background: #ff33b2;
+}
+
+/* Responsive Design */
+@media(max-width: 768px) {
+.stats, .feature1, .feature2, .feature3 {
+  flex-direction: column;
+}
+}
